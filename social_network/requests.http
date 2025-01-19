@@ -1,0 +1,37 @@
+GET http://127.0.0.1:8000/post/
+
+###
+
+POST http://127.0.0.1:8000/post/
+Content-Type: application/json
+Authorization: Token bc4e5af4284858b8197f335028622cc9f31cdc0e
+
+{
+    "post_text": "dereswe",
+    "image": "8.jpg"
+}
+
+###
+
+DELETE http://127.0.0.1:8000/post/7/
+Authorization: Token 7eeaf3fccd34ef09cd29db045ef6a3271bed2ddc
+###
+
+GET http://127.0.0.1:8000/post/
+Authorization: bc4e5af4284858b8197f335028622cc9f31cdc0e
+
+###
+
+POST http://127.0.0.1:8000/post/
+Content-Type: application/json
+Authorization: Token bc4e5af4284858b8197f335028622cc9f31cdc0e
+
+{
+    "post_text": "vvvvvvvv",
+    "image": "https://fonwall.ru/wallpaper/an-anime-fairy-tale-elza/"
+}
+
+###
+
+GET http://http.localhost:8000/post/
+Authorization: bc4e5af4284858b8197f335028622cc9f31cdc0e
